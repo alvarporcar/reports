@@ -1,0 +1,11 @@
+<html>
+<head>
+	<title>Incidencies del projecte d'assistència informàtica</title>
+</head>
+<body>
+<h1>Incidencies obertes de la Secció d'Informàtica</h1>
+{% for incidencia in incidencies_informatica %}
+	<li>{{incidencia.reporter.name}} | {{incidencia.category}} | {{incidencia.summary}} </li>
+{% endfor %}
+</body>
+</html>

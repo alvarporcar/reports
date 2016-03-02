@@ -1,0 +1,100 @@
+﻿GIT
+
+
+
+Crear el repositori Git
+
+git init 
+
+
+
+Afegir fitxers a la zona d’index
+
+git add nom_del_fitxer
+
+
+
+Afegir tots els fitxers a partir de l'arrel de l'aplicació
+
+git add . (ojo: algú diu, git add -r .)
+
+
+
+Ajuda interactiva de git
+git add -i
+
+Saber l’estat des fitxers
+
+git status
+
+
+
+Fer commit per a guardar els canvis al repositori local
+
+git commit -m “missatge”
+
+
+
+Històric dels commits
+
+git log
+git log -oneline
+
+
+
+Vincular amb directori remot
+
+git remote add alias_repositori_remot https://github.com/alvarporcar/certificats_dipcas.git
+
+Desvincular directori remot
+git remote remove alias_repositori_remot
+
+
+
+Llistar els remots
+
+git remote -v
+
+
+
+Pujar canvis al remot
+
+git push alias_repositori_remot rama (git push origin master)
+
+
+
+Clonar repositori remot
+
+git clone url_remota
+
+
+
+Renombrar repositorio remot
+
+git remote rename nom_antic nom_nou
+
+
+
+Actualitzar repositori local
+git fetch alias_remot
+
+Actualitzar directori de treball
+git pull alias_remot alias_local (git push github master)
+
+Pues si queremos volver a recuperar el estado del ultimo commit 
+git reset --hard HEAD
+Donde está instrucción deja el repositorio en el ultimo comit de esa rama.
+Con esta ultima instrucción los ficheros que hubieras eliminado, los recuperas, los ficheros que modificaste te los pone de nuevo, lo que no hace, es eliminar los ficheros que tiene a mayores, que con git status puedes verlos.
+
+Ajuda de git
+
+git —help
+
+
+
+Documentació
+
+git-scm.com
+
+gitimmersion.com
+

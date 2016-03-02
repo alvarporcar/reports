@@ -1,0 +1,11 @@
+<html>
+<head>
+	<title>Incidencies del projecte d'assistència informàtica</title>
+</head>
+<body>
+<h1>Incidencies tancades de la Secció d'Informàtica a l'any 2015</h1>
+{% for incidencia in incidencies %}
+	<li>{{incidencia.id}} | {{incidencia.reporter.name}} | {{incidencia.last_updated}}  |  {{incidencia.category}} | {{incidencia.summary}} </li>
+{% endfor %}
+</body>
+</html>

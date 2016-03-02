@@ -1,0 +1,71 @@
+Listas []
+tuplas ()
+diccionarios {}
+strings ' '
+
+En plantilles de Django:
+{% ........%} Etiquetes
+{{ .........}} variables
+
+Instal·lar python + django
+$ sudo apt-get install python
+$ sudo apt-get install python-django
+
+Path de Python
+$ python
+>>> import sys
+>>> sys.path
+
+Llistar els paquets instal·lats
+$ pip list
+
+Saber la versió de django
+$ python
+>>> import django
+>>> django.VERSION
+
+Crear un projecte
+$ django-admin startproject projecte_exemple
+	__init__.py, manage.py, settings.py, urls.py
+
+Ajuda del comand manage.py
+$ python manage.py help
+
+Crea una aplicació dins d'un projecte
+$ python manage.py startapp aplicacio_exemple
+	__init__.py, models.py, tests.py, views.py	
+
+Validar el model de la bbdd
+$ python manage.py check
+
+Generar SQL de les tables
+$ python manage.py makemigrations
+
+Crea les taules a la BBDD (també per a crear l'interficie d'admin)
+$ python manage.py migrate
+
+En cas de que vulguem modificar un model ja existent
+$ python manage.py reset aplicacio_exemple
+
+
+Arrancar interpret interactiu de la BBDD
+$ python manage.py dbshell
+
+Arrancar interpret interactiu des de la carpeta del projecte
+$ python manage.py shell
+
+Crear superusuario interfície admin
+$ python manage.py createsuperuser
+
+Arrancar servidor (desde la carpeta del proyecto)
+$ python manage.py runserver
+  arranca el servidor al port 8000
+
+Si volet accedir des d’una ordinador al servidor:
+$ sudo python manage.py runserver 0.0.0.0:80
+
+
+
+
+
+ 
